@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: file/
+Disallow: css/
+Disallow: img/
+Disallow: js/
+Disallow: *.ipa
+Disallow: *.apk
+
+Allow: /index.html
+Allow: /d.html
+Allow: /ar.html
+Allow: /pr.html
+Allow: /ra.html
+Allow: /sa.html
+
