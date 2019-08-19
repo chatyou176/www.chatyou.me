@@ -116,6 +116,12 @@
         <div class="w3-col s12 m12 w3-center">
           <button id="download_app" class="w3-btn w3-red w3-padding-large w3-xlarge w3-wide w3-round-xxlarge">&nbsp下载巧遇&nbsp</button>
         </div>
+
+        <div class="w3-col s12 m12 w3-center">&nbsp</div>
+
+        <div class="w3-col s12 m12 w3-center">
+          <a id="download_google" href="https://play.google.com/store/apps/details?id=com.llt.chatyou"><img class="w3-image" src="img/logo_google.png"></a>
+        </div>
     </div>
     <br>
 
@@ -313,6 +319,8 @@
     if (IsPC()) {
       //window.location.href = './indexm.html';
       document.getElementById("download").className += " w3-hide";
+      document.getElementById("download_google").className += " w3-hide";
+
       //document.getElementById("download_pc").className += " w3-show";
     } else {
       document.getElementById("download_pc").className += " w3-hide";
@@ -330,6 +338,8 @@
 
       document.getElementById("ios-notes").className += " w3-show";
 
+      //
+      document.getElementById("download_google").className += " w3-hide";
 
       // wechat
       if (/(MicroMessenger)/i.test(navigator.userAgent)){
@@ -358,6 +368,9 @@
 
     // android
     } else if (/(Android)/i.test(navigator.userAgent)) {
+
+      document.getElementById('download_app').innerText ="下载巧遇 APK";
+
       // check line
       if (/(line)/i.test(navigator.userAgent)) {
         document.getElementById("top-notes").className += " w3-show";
